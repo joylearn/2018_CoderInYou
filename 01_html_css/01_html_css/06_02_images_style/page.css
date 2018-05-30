@@ -29,9 +29,16 @@
 /*6. shift the image up with margin-top: -100px*/
 .my-face{
 	
+display:block;
+max-width: 200px;
+height: 200px;
 
+margin:auto;
+/* use margin-left :auto and margin-right:auto */
 
+border-radius: 50px;
 
+margin-top: -88px;  /* to stack pic on top of the other */
 
 
 }
@@ -39,5 +46,8 @@
 /*stripe generator: http://www.stripegenerator.com/*/
 /*7. set background image as: stripe_background.png*/
 .my-body{
+background-image: url(stripe_background.png);
+
+/* auto repeat by default, or use background-repeat: no-repeat if you want */
 	
 }
