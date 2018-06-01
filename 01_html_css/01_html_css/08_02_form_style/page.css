@@ -10,10 +10,10 @@
 
 /*1. add margin spacing for top & bottom: 20px */
 .my-form-group{
-	
+		margin:20px 0;
 }
 
-/*This selector refers to ALL <input> */
+/*This selector refers to ALL <input> ... all input types!! */
 input[type]{
 	-webkit-appearance: none;/*removes browser override style on mac*/
 
@@ -21,7 +21,9 @@ input[type]{
 	/*3. increase font size to: 1.5rem */
 	/*4. increase height to: 2rem */
 	
-
+	width: 100%;
+	font-size: 1.5rem;
+	height: 2rem;
 	
 }
 
@@ -32,7 +34,9 @@ input[type=email]{
 
 	/*5. remove existing border to: none*/
 	/*6. create an underline effect by setting a new border-bottom to: 1px solid black*/
-	
+	border: none;
+	border-bottom:  1px solid black;
+
 
 }
 
@@ -43,7 +47,9 @@ input[type=email]:focus{
 	/*7. remove the default glow with outline:none */
 	/*8. set the border and text color to: orangered*/
 	
-
+	outline: none;
+	border-color: orangered;
+	color: blue;
 
 }
 
@@ -54,7 +60,10 @@ input[type=submit]{
 	/*10. remove the bezel with border:none*/
 	/*11. set background color to: black and text to: white */
 	
-
+	height: 3rem;
+	border: none;
+	background-color: black;
+	color: white;
 
 
 }
@@ -62,7 +71,7 @@ input[type=submit]{
 /*hovering state, similar to a:hover */
 input[type=submit]:hover{
 	/*12. set background color to: orangered */
-	
+	background-color: cyan;
 }
 
 /*this optional style removes the yellow background of chrome's autofill*/

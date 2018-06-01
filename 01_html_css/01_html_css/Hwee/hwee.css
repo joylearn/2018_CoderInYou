@@ -1,0 +1,11 @@
+
+
+.my-parallax{
+	/* vh is the same as %, so 3vh is 3% */
+	height: 80vh;
+	background-image: url(grassland.jpg);
+	background-repeat:no-repeat; 
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
