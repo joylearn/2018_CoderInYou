@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bootstrap Walkthrough</title>
+
+    <!-- Hwee: choose meta-vp to gen the next line -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap Walkthru Hwee</title>
 
     <!-- default bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -18,16 +22,310 @@
     
     <!-- animate.css -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
-    
+    <link rel="stylesheet" href="custom.css">
+
     <!-- use this style for testing and development purposes -->
-    <!-- <style type="text/css">
+     <style type="text/css">
     .container{border: 2px dotted green;}
     .row{border: 1px dotted red;}
     .row [class*=' col-']{border: 2px dotted purple;}
-    </style> -->
+    </style>
     
 </head>
 <body>
+
+    <div class="container">
+
+        <!-- row 1 ********************  -->
+        <!-- https://getbootstrap.com/docs/3.3/components/#jumbotron -->
+        <div class="row">
+            <div class="col-md-12">
+            <div class="jumbotron">
+                    <h1>learn code son</h1>
+
+
+                </div>
+                 test1
+            </div>
+
+        </div>
+
+        <!-- row 2 ********************** -->
+        <!-- for buttons, see https://getbootstrap.com/docs/3.3/css/#buttons-->
+        <!-- for estimating columns size, see https://placeholder.com/-->
+        <div class="row">
+            <div class="col-md-4">
+                 
+                <div class="thumbnail">
+                    <img src="http://via.placeholder.com/400x400" alt="">
+                    <div class="caption">
+                        <h3>portfolio 1</h3>
+                        <p> pig pig</p>
+                        <p>
+                            <a class="btn btn-primary" href="http://www.ryansgrocery.com//">
+                                pigs fly
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+                            
+
+            </div>
+
+            <div class="col-md-4 " >
+                <div class="thumbnail">
+                        <img src="http://via.placeholder.com/400x400" alt="">
+                        <div class="caption">
+                            <h3>portfolio 2</h3>
+                            <p> cow cow</p>
+                            <p>
+                                <a class="btn btn-primary" href="https://edition.cnn.com/">
+                                    cnn news!
+                                </a>
+                            </p>
+    
+                        </div>
+
+                </div>
+                    
+                            
+
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                        <img src="http://via.placeholder.com/400x400" alt="">
+                        <div class="caption">
+                            <h3>portfolio 3</h3>
+                            <p> goat goat</p>
+                            <p>
+                                <a class="btn btn-primary" href="https://edition.cnn.com/">
+                                    cnn news!
+                                </a>
+                            </p>
+    
+                        </div>
+                </div>
+                       
+
+            </div>
+
+
+
+        </div>
+
+                    <!-- row 3 ******************* -->
+                    <!-- to embed video, see https://getbootstrap.com/docs/3.3/components/#responsive-embed-->
+                    <!-- to find src of video, go to share video link, see EMBED and copy the link address of video  -->
+        <div class="row">
+            <div class="col-md-12">
+                 
+                <div class="embed-responsive embed-responsive-16by9" >
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uAFv7aIsCSc"  ></iframe>
+                 
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+                    <!-- row 4 *************************** -->
+                    <!-- https://getbootstrap.com/docs/3.3/css/#forms -->
+        <div class="row">
+            <div class="col-md-6">
+                 
+                <h1> Talk to me</h1>
+                <form action="">
+
+                    <div class="form-group">
+                        <label for="">Name pls</label>
+                        <input type="text" class="form-control" name="my_name" id="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Email pls</label>
+                        <input type="email" class="form-control" name="my_email" id="">
+
+                    </div>
+
+                   <div class="form-group">
+                       <!-- coz it is radio (not check box) button, 1 variable hence name MUST BE the same but id must remain diff -->
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="my_radio" id="radio1"> 1st Radio
+                            </label>
+
+                            <label>
+                                    <input type="radio" name="my_radio" id="radio2"> 2nd Radio
+                                </label>
+
+                        </div>
+
+
+
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="send Hwee an email!">
+
+                </div>
+
+
+                </form>
+
+
+    
+            </div>
+
+            <div class="col-md-6 text-center"   >
+            
+                <h3>About me</h3>
+                <hr>
+                <p>learning to code today. ... ...... ..... .... ... .. ... ..  
+                    ... ... .. . .. . . .. .......
+                    ******** jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+                    tomorrow is sunday. monday. tuesday then wednesday thursday. friday. monday tuesday
+
+                </p>
+
+
+        
+            </div>
+
+        </div>
+
+                    <!-- row 5 *********************** -->
+        <div class="row">
+
+            <div class="col-md-4">
+                 
+                <h3> working hours</h3>
+                
+                <table class="table">
+
+                    <th>
+                        Day
+                    </th>
+                    <th>Hours</th>
+
+
+
+                    <tr>
+                            <td>
+                                monday
+                            </td>
+
+                            <td>
+                                24 hrs
+                            </td>
+                    </tr>
+
+                        
+                    <tr>
+                            <td>
+                                tuesday
+                            </td>
+
+                            <td>
+                                9am
+                            </td>
+                    </tr>
+
+                    <tr>
+                            <td>
+                                wednesday
+                            </td>
+
+                            <td>
+                                10am
+                            </td>
+                    </tr>
+
+
+
+
+                </table>
+
+            </div>
+
+            <div class="col-md-4">
+                <!-- to embed map, see https://getbootstrap.com/docs/3.3/components/#responsive-embed-->
+                <!-- to copy src address from map.google.com.  find add u want, then do a share to see src add to copy-->
+                    <div class="embed-responsive embed-responsive-4by3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.791450402823!2d103.78522611403369!3d1.2999543620976055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a45527bd28b%3A0xc5a49606699d4811!2sOne+North+Station!5e0!3m2!1sen!2ssg!4v1527912795247" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    
+                    </div>
+                                    
+    
+            </div>
+
+            <div class="col-md-4">
+               <!--  https://getbootstrap.com/docs/3.3/components/#list-group-linked -->
+               <!--  go find the icons go visit font awesome https://fontawesome.com/v4.7.0/icons/-->
+                      
+               <h3>find me</h3>
+               <div class="list-group">
+                   <a href="+65 1688" class="list-group-item">
+                    <i class="fa fa-phone" aria-hidden="true"></i> +65 12345678
+                     </a>
+
+               </div>
+
+               <div>
+                    <a href="mailto:someone@where.com" class="list-group-item">
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i> someone@where.com
+                    </a>
+
+               </div>
+
+               <div>
+                    <a href="mailto:someone@where.com" class="list-group-item">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+
+               </div
+
+
+            </div>
+
+
+        </div>
+
+                    <!-- row 6 ****************************** -->
+                    <!-- to move the icon to the center, -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li> 
+                        <a href="http://">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li> 
+                            <a href="http://">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+
+                </ul>     
+            
+            </div>
+
+            
+         </div>
+
+                
+                     
+
+
+    </div>
 
 </body>
 </html>
