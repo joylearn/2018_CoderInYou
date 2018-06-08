@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>My Javascript 02e</title>
+    
+  
+</head>
+<body>
+    
+    <p id="demo">
+
+    </p>
+
+
+      <!-- all javascript must be inside the script tag  -->
+      <script language="javascript" type="text/javascript" >
+        var myObject;
+
+        myObject = [
+            
+            { 
+                "id" :1,
+                "name" : "Steven", 
+                "dob" : "01-Jan-1977",
+                "cars" : ["Civic", "Evolution", "Subaru"]
+            }, 
+            
+
+            {
+                "id" :2,
+                "name" : "MAry", 
+                "dob" : "01-Feb-1978",
+                "cars" : ["Flower", "cake", "Subaru"]
+            }, 
+            
+
+            {
+                "id" :3,
+                "name" : "Grandpa", 
+                "dob" : "21-July-1940",
+                "cars" : ["horse", "cow", "OX"]
+            } 
+            
+            ];
+        
+
+            var x = myObject[0].name;
+
+            // from pass var in javascript to html ; 
+             document.getElementById("demo").innerHTML = x;  
+    
+    
+    </script>
+
+
+</body>
+</html>

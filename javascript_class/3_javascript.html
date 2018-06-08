@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>My Javascript 02e</title>
+    <!-- all javascript must be inside the script tag  -->
+    <script language="javascript" type="text/javascript">
+        var myObject;
+
+        // this is a JASON object (JavaScript Object Notation)
+        // https://letslearnjava.quora.com/JavaScript-Object-Notation-with-Java
+
+        myObject = [
+
+            {
+                "id": 1,
+                "name": "Steven",
+                "dob": "01-Jan-1977",
+                "cars": ["Civic", "Evolution", "Subaru"]
+            },
+
+
+            {
+                "id": 2,
+                "name": "MAry",
+                "dob": "01-Feb-1978",
+                "cars": ["Flower", "cake", "Sugar"]
+            },
+
+
+            {
+                "id": 3,
+                "name": "Grandpa",
+                "dob": "21-July-1940",
+                "cars": ["horse", "cow", "OX"]
+            }
+
+        ];
+
+        var linebreak = "<br>";
+        
+
+        function printData(count) {
+            var name = myObject[count].name;
+            var dob = myObject[count].dob;
+            var car = ""
+            var carlen = myObject[count].cars.length;
+
+            for (var i = 0; i < carlen; i++) {
+
+                // to append the data of the var as we loop thru the records
+                // The variable car is an array itself
+                car += myObject[count].cars[i] + linebreak; // car = car + myObject[count].cars[i];
+            }
+
+
+            // from pass var in javascript to html ; 
+
+                 // PluseEqual is dcoument.getElementByID("demo").innerHTML = increment itself by 1; single line of code
+                 document.getElementById("demo").innerHTML += name + linebreak + dob + linebreak + car + linebreak + carlen + linebreak;
+              
+
+                // 2 steps needed to print out the looping data
+                // var y = document.getElementById("demo").innerHTML;
+                // document.getElementById("demo").innerHTML = y + name + linebreak + dob + linebreak + car + linebreak + carlen + linebreak;document.getElementById("demo").innerHTML;
+        }
+
+        function whileloopData() {
+                var counter = 0;
+
+                while (counter < myObject.length) { // start of while loop
+                printData(counter);
+                counter++; // counter = counter + 1;
+            } // end of while loop
+        }
+
+
+        // while loop tests for condition 1st before enters body.  FOR loop will at min run once the body before it 
+        // checks for condition.
+
+    </script>
+
+</head>
+
+<body>
+
+    <p id="demo">
+        <!-- this is the .innerHTML part -->
+    </p>
+
+    <input type="button" value="Printing data" onclick="whileloopData()" />
+
+
+</body>
+
+</html>

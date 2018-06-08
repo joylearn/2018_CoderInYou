@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>my 1st javascript</title>
+
+    <script language="javascript" type="text/javascript"> 
+        // all our javascript code here 
+
+        // declaring a var named number; string have quotation while numbers does not.
+        var number = 1;
+        var name = "HWee"; //this is global variable coz it is outside a function
+        var linebreak = "<br/>"
+
+        //declaring array i.e. a list of items
+        // 1st element of an array  is position 0. 
+        var mytextarray1 = ["angela", "chetan", "janie", "tong hwee", "chris"];
+
+
+
+
+        //create functions... document.writeln is also a function
+        function writeHTML() {
+            //write the content of var to brwoser; var name is case sensitive
+            document.writeln(" <h1> Helloooo Word!! </h1> ");
+            document.writeln(number);
+            document.write(" <br> ");
+            document.writeln(name);
+        }
+
+        function SaaayName() {
+
+            var name = "Pab";
+            //create alert pop up msg
+            alert(name);  // printing local variable
+
+            alert(this.name); // this here points to global varible, printing global variable
+
+        }
+
+        function BasicCal() {
+
+            var num1 = 5;
+            var num2 = 2;
+
+            document.writeln("5*2= " + (num1 * num2) + linebreak);
+            document.writeln("5/2= " + (num1 / num2) + linebreak);
+            document.writeln("5+2= " + (num1 + num2) + linebreak);
+            document.writeln("5-2= " + (num1 - num2) + linebreak);
+            document.writeln("5%2= " + (num1 % num2) + linebreak); // % is modulers
+
+        }
+
+        function ProcessMyNumber() {
+            var keyinnum = document.getElementById("keyinnumID").value;  //without the .value, the value returned  is INPUT type.
+
+            // alert(keyinnum);
+
+            var RHS = 50;
+
+            if ((keyinnum > 90) && (keyinnum <= 100)) {
+                alert(" Distinction!!!!!!");
+                // && is for AND, || is for OR
+            }
+            else if (keyinnum > RHS) {
+                alert("you passed!");
+            }
+            else {
+                alert("border line pass");
+            }
+
+
+        }
+
+        function ProcessMyArray() {
+            document.writeln("number of items in Names : " + mytextarray1.length + linebreak);
+
+            var count = 0;  //// 1st element of an array  is position 0. 
+            while (count < mytextarray1.length) { //start of while loop
+
+               // document.writeln(mytextarray1[count] + linebreak); // one method of printing to browser
+                console.log(mytextarray1[count]); //WOW !!for debugging purpose, developer tools of chrome, see console section
+
+
+                count++; //count = count +1 
+            } // end of while loop
+        }
+
+        //to call function with the head section, just call function directly.  in body must hv a trigger such as onclick
+        writeln()
+
+
+    </script>
+
+</head>
+
+
+<body>
+
+    <!-- calling the function by using onclick -->
+    <input type="button" value="Print Text" onclick="writeHTML()" />
+    <input type="button" value="Say my name" onclick="SaaayName()" />
+    <input type="button" value="Basic Calculation" onclick="BasicCal()" />
+
+    <input type="button" value="loop thru names" onclick="ProcessMyArray()" />
+
+    <hr> Enter a number:
+    <input type="number " id="keyinnumID" />
+    <input type="button" value="Post number" onclick="ProcessMyNumber()" />
+
+
+
+</body>
+
+
+</html>
